@@ -17,7 +17,7 @@
   <meta name="description" content="">
   <meta name="author" content="Terrence">
   <meta name="keywords" content="">
-  <title>序言 张牙舞爪的三只狗 Hexo</title>
+  <title>序言 张牙舞爪的三只狗 张牙舞爪的三只狗</title>
 
   <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
 
@@ -175,7 +175,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      20 字
+      154 字
     </span>
   
 
@@ -216,7 +216,9 @@
           <div class="post-content mx-auto" id="post">
             
             <article class="markdown-body">
-              <p>谨以此纪念我们逝去的大学时光。</p>
+              <blockquote>
+<p>谨以此纪念我们逝去的大学时光。我曾经幻想过把自己遇到的有趣的都给记录下来，但是到后面才发现，能够记录的只是当时说不清道不明的心绪。这写个页面存在的意义最初就仅仅是我为了试用HEXO程序而折腾出来的，实际上我已经有了一个博客，那么我就陷入了当时思考博客的意义的时候。我当然没有精力去更新两三个博客，那么不妨来记录一些东西。</p>
+</blockquote>
 <h2 id="从前有三只狗"><a href="#从前有三只狗" class="headerlink" title="从前有三只狗"></a>从前有三只狗</h2><h3 id=""><a href="#" class="headerlink" title=""></a></h3>
             </article>
             <hr>
@@ -256,28 +258,30 @@
               <div class="comments" id="comments">
                 
                 
-  <div class="disqus" style="width:100%">
-    <div id="disqus_thread"></div>
-    <script type="text/javascript">
-      function loadDisqus() {
-        var disqus_config = function () {
-          this.page.url = 'http://www.3dogs.top/2019/10/10/hello-world/';
-          this.page.identifier = '/2019/10/10/hello-world/';
-        };
-        (function () {
-          var d = document,
-            s = d.createElement('script');
-          s.src = '//' + '' + '.disqus.com/embed.js';
-          s.setAttribute('data-timestamp', new Date());
-          (d.head || d.body).appendChild(s);
-        })();
-      }
-      createObserver(loadDisqus, 'disqus_thread');
-    </script>
-    <noscript>Please enable JavaScript to view the
-      <a href="https://disqus.com/?ref_noscript" target="_blank" rel="nofollow noopener noopener">comments powered by Disqus.</a>
-    </noscript>
-  </div>
+  <div id="vcomments"></div>
+  <script type="text/javascript">
+    function loadValine() {
+      addScript('https://cdn.staticfile.org/valine/1.4.14/Valine.min.js', function () {
+        new Valine({
+          el: "#vcomments",
+          app_id: "1lTWsbdx9yA5yy5Nwe5NiQEI-gzGzoHsz",
+          app_key: "VqL0qd5kDqAgRJSb3eEHWqo9",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    }
+    createObserver(loadValine, 'vcomments');
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://valine.js.org" target="_blank" rel="nofollow noopener noopener">comments
+      powered by Valine.</a></noscript>
 
 
               </div>
